@@ -12,16 +12,16 @@ import { ProjectsCarousel } from "../components/carousel";
 
 export default function Home() {
   return (
-    <div className="background-black">
+    <div className="background-white">
 
       <FloatingNav
         navItems={[
           { name: "Home", link: "#" },
           { name: "About", link: "#about" },
-          { name: "Services", link: "/services" },
+          { name: "Projects", link: "#projects" },
         ]}
-        buttonLink="/login" // The link for the button
-        buttonText="Login" // The text displayed on the button
+        buttonLink="/resume.pdf"
+        buttonText="Resume"
       />
       
       {/* Title Card */}
@@ -72,14 +72,16 @@ export default function Home() {
           <p className="mb-4"></p> 
 
           <div className="flex items-center space-x-4">
-            <HoverBorderGradient
-              containerClassName="rounded-full"
-              as="button"
-              className="dark:bg-black bg-black text-white dark:text-black flex items-center space-x-2"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
-              <span className="font-sans">Resume</span>
-            </HoverBorderGradient>
+            <a href="/resume.pdf" download>
+              <HoverBorderGradient
+                containerClassName="rounded-full"
+                as="button"
+                className="dark:bg-black bg-black text-white dark:text-black flex items-center space-x-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
+                <span className="font-sans">Resume</span>
+              </HoverBorderGradient>
+            </a>
 
 
             <a href="https://github.com/hxu64/" target="_blank" rel="noopener noreferrer">
@@ -124,7 +126,8 @@ export default function Home() {
           />
         </div>
       </div>
-
+      
+      <div id="projects"></div>
       <ProjectsCarousel />
 
 

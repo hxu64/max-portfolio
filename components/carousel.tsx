@@ -262,12 +262,15 @@ export const Card = ({
             >
             {card.title}
             </motion.p>
-            <div className="font-sans text-sm mt-1 text-left" style={{ color: card.color }}>
-            {card.content.map((item, index) => (
-                <motion.p key={index} className="mt-1">
-                {item}
-                </motion.p>
-            ))}
+            <div
+                className="font-sans text-sm mt-1 text-left sm:block hidden"
+                style={{ color: card.color }}
+                >
+                {card.content.map((item, index) => (
+                    <motion.p key={index} className="mt-1">
+                    {item}
+                    </motion.p>
+                ))}
             </div>
 
             </div>
