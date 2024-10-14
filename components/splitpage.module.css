@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    height: 100vh; /* Make it full height */
+    background-color: black;
+    justify-content: space-between; /* Distribute space between children */
+}
+
+.leftDiv {
+    flex: 0 0 40%; /* Set width to 40% */
+    background-color: black; /* Set background to black */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    border: 2px solid white; /* Add a white outline */
+    margin-right: 20px; /* Space between left and right divs */
+}
+
+.rightDiv {
+    flex: 0 0 40%; /* Set width to 40% */
+    background-color: black; /* Set background to black */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    border: 2px solid white; /* Add a white outline */
+    margin-left: 20px; /* Space between left and right divs */
+}
