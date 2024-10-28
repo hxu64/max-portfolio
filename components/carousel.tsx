@@ -335,17 +335,22 @@
       ));
     
       return (
-        <div className="w-full h-full py-20">
-          <h2 className="font-sans max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-              My Projects.
-          </h2>
-          <Carousel items={cards} />
-        </div>
+        <Carousel items={cards} />
       );
+      
+      
       
     }
     
     const data = [
+      {
+        color: "white",
+        category: "Full Stack/Database/ML",
+        title: "YouTube Data Pipeline",
+        src: "/images/youtubepipeline.png",
+        content: ["Real-time sentiment analysis pipeline for YouTube comments.", "Built using:", "▶ Google Cloud", "▶ Apache Kafka", "▶ Apache Spark", "▶ Zookeeper", "Fetches comments via YouTube API and processes them in real time.", "Utilizes bootstrapped servers for fault tolerance and scalability."],
+        link: "https://hxu64.github.io/posts/youtube-analysis/"
+      },
       {
         color: "white",
         category: "Full Stack",
@@ -361,6 +366,6 @@
         src: "/images/lua.png",
         content: ["A virtual currency/trading simulator, used to illustrate mathematical and economic concepts", "Built using:", "▶ C/C++", "▶ Python", "▶ SQL", "▶ React/Next.JS", "Designed with scability in mind, handled inputs from hundreds of users in final rounds of testing"],
         link: "https://replit.com/@summer8n2/lua-bot"
-      },
+      }
     ];
     
