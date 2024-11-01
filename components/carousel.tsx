@@ -305,9 +305,11 @@
     src,
     className,
     alt,
+    sizes = "(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw", // Default sizes value
     ...rest
   }: ImageProps) => {
     const [isLoading, setLoading] = useState(true);
+    
     return (
       <Image
           className={cn(
@@ -319,13 +321,14 @@
           src={src}
           width={width}
           height={height}
+          fill // Ensures image fills the container
+          sizes={sizes} // Pass sizes prop here
           loading="lazy"
           decoding="async"
           blurDataURL={typeof src === "string" ? src : undefined}
           alt={alt ? alt : "Background of a beautiful view"}
           {...rest}
       />
-
     );
   };
 

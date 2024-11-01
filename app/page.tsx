@@ -5,6 +5,7 @@ import '@fontsource/ibm-plex-sans';
 import { FloatingNav } from "../components/floatingnav";
 import { HoverBorderGradient } from "../components/hover-border-gradient";
 import { ProjectsCarousel } from "../components/carousel";
+import TitleCard from "../components/titlecard";
 
 
 
@@ -16,6 +17,8 @@ export default function Home() {
         <meta name="description" content="Your description here" />
         {/* You can add other meta tags here */}
       </Head>
+
+      
 
       <div className="background-white">
 
@@ -30,31 +33,15 @@ export default function Home() {
         />
         
         {/* Title Card */}
-      <div className="h-screen w-full flex flex-col items-center justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
-        <div className="p-4 max-w-7xl mx-auto relative z-10 w-full text-center">
-          <h1 className="font-sans text-5xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            Max Xu <br />
-          </h1>
-          <h3 className="font-sans md:text-3xl font-normal text-base text-neutral-300 max-w-lg mx-auto">
-            <span className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-pink-500">
-              Color
-            </span>{" "}
-            the world.
-          </h3>
-          {/* Down Link */}
-          <a className="down mt-6" href="#about" data-scroll>
-            <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
+        <TitleCard></TitleCard>
 
 
         <div id="about" className="flex flex-col md:flex-row mx-auto py-20 px-4 md:px-8 lg:px-10">
           <div className="md:w-1/2 flex flex-col justify-center items-start h-[50vh] md:ml-[20vh] mb-8 md:mb-0 mt-[13vh]">
             <h2 className="font-sans text-2xl md:text-5xl mb-4 text-black dark:text-white">
-              Driven to{" "}
+              Empowering{" "}
               <span className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-yellow-500 to-red-500">
-                create.
+                solutions.
               </span>
             </h2>
             <p className="font-sans text-3xl md:text-2xl text-neutral-700 dark:text-neutral-300 text-base md:text-lg">
@@ -84,7 +71,7 @@ export default function Home() {
                   as="button"
                   className="dark:bg-black bg-black text-white dark:text-white flex items-center space-x-2"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
                   <span className="font-sans">Resume</span>
                 </HoverBorderGradient>
               </a>
@@ -185,9 +172,9 @@ export default function Home() {
                     viewBox="0 0 24 24" 
                     fill="none" 
                     stroke="#000000" 
-                    stroke-width="2" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round"
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
                   >
                     <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
@@ -202,9 +189,9 @@ export default function Home() {
                     viewBox="0 0 24 24" 
                     fill="none" 
                     stroke="#ffffff" 
-                    stroke-width="2" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round"
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
                   >
                     <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
