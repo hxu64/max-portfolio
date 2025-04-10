@@ -65,7 +65,7 @@ export default function Home() {
             <p className="mb-4"></p> 
 
             <div className="flex items-center space-x-4">
-              <a href="/resume.pdf" download>
+              <a href="/Resume.pdf" download>
                 <HoverBorderGradient
                   containerClassName="rounded-full"
                   as="button"
