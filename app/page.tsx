@@ -28,7 +28,7 @@ export default function Home() {
             { name: "About", link: "#about" },
             { name: "Projects", link: "#projects" },
           ]}
-          buttonLink="/resume.pdf"
+          buttonLink="/Resume.pdf"
           buttonText="Resume"
         />
         
